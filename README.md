@@ -1,4 +1,4 @@
-# FTP Server
+# Docker FTP Server
 
 Supports passive mode. Based on [Docker Pure-ftpd Server](https://github.com/stilliard/docker-pure-ftpd).
 
