@@ -26,6 +26,14 @@ No restart should be needed. More info on usage here: https://download.pureftpd.
 2. `ftp> user bob`
 3. `ftp> ls`
 
+# Restoration from backup
+
+Container can be backed up and restored using `dockup` image. Stored files must have correct ownership `ftpuser:ftpgroup`, otherwise FTP write fails on permissions.
+
+1. get into the container `docker exec -t [containerid] bash`
+2. `cd /home/ftpusers`
+3. `chown ftpuser:ftpgroup -R *`
+
 # Issues
 
 * Does not support TLS (needs configuration)
